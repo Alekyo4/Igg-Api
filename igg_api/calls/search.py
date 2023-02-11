@@ -1,6 +1,5 @@
 from slugify import slugify
 from bs4.element import Tag
-from datetime import datetime as dt
 
 from igg_api.model import Post
 from igg_api.utils import scraping

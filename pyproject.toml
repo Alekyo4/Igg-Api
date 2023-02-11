@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "igg-api"
-version = "0.1.0"
+version = "0.1.1"
 description = "Webscraping on the page in IggGames"
 authors = ["Alexsander4742 <alexsander4742@gmail.com>"]
 readme = "README.md"
