@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "igg-api"
+version = "0.1.0"
+description = "Webscraping on the page in IggGames"
+authors = ["Alexsander4742 <alexsander4742@gmail.com>"]
+readme = "README.md"
+packages = [{include = "igg_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.91.0"
+aiohttp = "^3.8.3"
+beautifulsoup4 = "^4.11.2"
+python-slugify = "^8.0.0"
+
+[tool.poetry.scripts]
+dev = "igg_api.main:main"
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = "^0.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
