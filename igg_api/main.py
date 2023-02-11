@@ -3,7 +3,11 @@ from uvicorn import run as uvicorn
 
 from igg_api.router import app as router
 
-app: FastAPI = FastAPI(title="Igg Api")
+app: FastAPI = FastAPI(
+        title="Igg Api",
+        redoc_url="/docs",
+        docs_url=None
+        )
 
 app.include_router(router)
 
