@@ -5,7 +5,7 @@ from igg_api.model import Post
 from igg_api.utils import scraping
 
 async def call(**kwargs) -> None:
-    res: BeautifulSoup = await scraping(params={
+    res: BeautifulSoup = await scraping(['page', kwargs['page']], {
         "q": kwargs["query"]
         })
     data: list[Post] = []
